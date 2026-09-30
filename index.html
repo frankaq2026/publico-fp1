@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Listado automático</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 20px; }
+    h1 { font-size: 20px; }
+    a { text-decoration: none; color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    ul { line-height: 1.7; list-style: none; padding-left: 0; }
+    li::before { content: "• "; color: #999; }
+    .ruta { color: #555; margin-bottom: 10px; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+<h1>Contenido del repositorio</h1>
+<div class="ruta" id="ruta"></div>
+<ul id="listado"></ul>
+
+<script>
+  // 👇 Ajusta estos dos valores a tu usuario y repo
+  const usuario = "frankaq2026";
+  const repo    = "publico-u1";
+
+  // Lee ?path=... de la URL para saber qué carpeta mostrar
+  const params = new URLSearchParams(window.location.search);
+  const path   = params.get("path") || "";
+
+  document.getElementById("ruta").textContent = "Ruta: /" + (path || "");
+
+  async function cargar(ruta) {
+    const url = `https://api.github.com/repos/${usuario}/${repo}/contents/${ruta}`;
+    const res = await fetch(url);
+    if (!res.ok) {
+      document.getElementById("listado").innerHTML = "<li>Error al cargar contenido.</li>";
+      return;
+    }
+    const datos = await res.json();
+    const ul = document.getElementById("listado");
+    ul.innerHTML = "";
+
+    // Enlace para subir un nivel si no estamos en la raíz
+    if (ruta) {
+      const partes = ruta.split("/");
+      partes.pop();
+      const rutaPadre = partes.join("/");
+      const liUp = document.createElement("li");
+      const aUp = document.createElement("a");
+      aUp.textContent = "⬅ Subir";
+      aUp.href = rutaPadre ? `?path=${rutaPadre}` : "./";
+      liUp.appendChild(aUp);
+      ul.appendChild(liUp);
+    }
+
+    datos.forEach(item => {
+      const li = document.createElement("li");
+      const link = document.createElement("a");
+
+      // Carpetas primero, luego archivos (orden simple)
+      if (item.type === "dir") {
+        link.textContent = "📁 " + item.name;
+        link.href = `?path=${item.path}`;
+      } else {
+        link.textContent = "📄 " + item.name;
+        link.href = item.download_url; // enlace directo al archivo
+        link.target = "_blank";
+      }
+
+      li.appendChild(link);
+      ul.appendChild(li);
+    });
+  }
+
+  cargar(path);
+</script>
+
+</body>
+</html>
