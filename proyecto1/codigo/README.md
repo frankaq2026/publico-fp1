@@ -32,3 +32,7 @@ que pueda derivarse de su uso. Al ejecutar este script asumes la total
 responsabilidad de lo que ocurra en tu sistema.
 
 El uso de este script es **bajo tu propio riesgo**.
+
+## Contacto
+
+¿Problemas o dudas? → frankaq@hotmail.com
