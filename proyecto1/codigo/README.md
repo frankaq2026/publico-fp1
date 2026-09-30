@@ -35,4 +35,4 @@ El uso de este script es **bajo tu propio riesgo**.
 
 ## Contacto
 
-¿Problemas o dudas? → frankaq@hotmail.com
+¿Problemas o dudas? → Abre un [Issue](../../issues)
