@@ -1,0 +1,209 @@
+PREGUNTA:¿Qué protocolo sustituyó al NCP en 1981, permitiendo que cualquier ordenador compatible pudiera formar parte de Internet?
+RESPUESTA1:HTTP
+RESPUESTA2:WWW
+RESPUESTA3:TCP/IP
+RESPUESTA4:PPP
+VALIDA:3
+
+PREGUNTA:En PHP 8, ¿cuál es el comportamiento específico de la función fdiv() cuando ocurre una división por cero?
+RESPUESTA1:Lanza una excepción de tipo DivisionByZeroError.
+RESPUESTA2:Devuelve un error de nivel fatal que detiene la ejecución.
+RESPUESTA3:Retorna INF, -INF o NAN en lugar de lanzar un error.
+RESPUESTA4:Devuelve null y genera un mensaje de advertencia (Warning).
+VALIDA:3
+
+PREGUNTA:Al trabajar con herencia en PHP, ¿cuál es el modificador de visibilidad que permite que una propiedad sea accesible para la clase madre y sus hijas, pero no desde el exterior?
+RESPUESTA1:private
+RESPUESTA2:protected
+RESPUESTA3:public
+RESPUESTA4:static
+VALIDA:2
+
+PREGUNTA:Dentro del patrón arquitectónico MVC, ¿qué mecanismo se utiliza frecuentemente para alertar a la vista sobre cambios en el modelo sin introducir dependencias directas?
+RESPUESTA1:El patrón Singleton.
+RESPUESTA2:El patrón Bridge.
+RESPUESTA3:El patrón Factory Method.
+RESPUESTA4:El patrón Observer.
+VALIDA:4
+
+PREGUNTA:¿Qué comando de Artisan permite crear simultáneamente un modelo y su correspondiente archivo de migración en Laravel?
+RESPUESTA1:php artisan make:migration --model
+RESPUESTA2:php artisan make:model Nombre --migration
+RESPUESTA3:php artisan make:schema Pelicula -m
+RESPUESTA4:php artisan create:model Pelicula --db
+VALIDA:2
+
+PREGUNTA:¿Cuál de los siguientes principios de la computación en la nube permite a los proveedores asignar recursos físicos y virtuales dinámicamente según la demanda de múltiples consumidores?
+RESPUESTA1:Autoservicio bajo demanda.
+RESPUESTA2:Agrupación de recursos (Resource pooling).
+RESPUESTA3:Elasticidad rápida.
+RESPUESTA4:Control del servicio.
+VALIDA:2
+
+PREGUNTA:Según la evolución de la web, ¿en qué año se fundó Google y qué tecnología introdujo el mismo año el mercado canadiense?
+RESPUESTA1:1995; introdujo JavaScript.
+RESPUESTA2:1998; introdujo la banda ancha.
+RESPUESTA3:1998; Canadá introdujo la banda ancha en 1996.
+RESPUESTA4:1990; introdujo el primer servidor web.
+VALIDA:3
+
+PREGUNTA:En la manipulación de arrays en PHP, ¿qué función se utiliza para contar todos los valores de un array dado, devolviendo un array asociativo con las frecuencias?
+RESPUESTA1:count()
+RESPUESTA2:array_count_values()
+RESPUESTA3:array_keys()
+RESPUESTA4:array_sum()
+VALIDA:2
+
+PREGUNTA:Al configurar una base de datos MySQL para Laravel, ¿por qué se recomienda utilizar el motor de almacenamiento InnoDB en lugar de MyISAM?
+RESPUESTA1:Porque InnoDB es más rápido en consultas de solo lectura.
+RESPUESTA2:Porque MyISAM no permite la creación de índices.
+RESPUESTA3:Porque InnoDB permite trabajar con integridad referencial y relaciones entre tablas.
+RESPUESTA4:Porque MyISAM está obsoleto y no es compatible con PHP 8.
+VALIDA:3
+
+PREGUNTA:¿Quién formuló el patrón MVC originalmente en la década de 1970 dentro del sistema de programación Smalltalk-76?
+RESPUESTA1:Tim Berners-Lee.
+RESPUESTA2:Trygve Reenskaug.
+RESPUESTA3:Dale Dougherty.
+RESPUESTA4:Rasmus Lerdorf.
+VALIDA:2
+
+PREGUNTA:En las plantillas Blade de Laravel, ¿qué directiva se utiliza para definir el lugar exacto donde se inyectará el contenido de una sección en un layout maestro?
+RESPUESTA1:@section
+RESPUESTA2:@extends
+RESPUESTA3:@yield
+RESPUESTA4:@include
+VALIDA:3
+
+PREGUNTA:¿Qué característica de una arquitectura SOA implica que la implementación del servicio debe estar oculta para el consumidor del mismo?
+RESPUESTA1:Autonomía.
+RESPUESTA2:Abstracción.
+RESPUESTA3:Interoperabilidad.
+RESPUESTA4:Descubrimiento.
+VALIDA:2
+
+PREGUNTA:¿Cuál es la función de la capa de "Ontología" dentro de la arquitectura de la Web Semántica propuesta por Tim Berners-Lee?
+RESPUESTA1:Representar caracteres de manera única.
+RESPUESTA2:Proporcionar una garantía de calidad y confianza en la información.
+RESPUESTA3:Describir colecciones de términos y sus relaciones con capacidad de inferencia.
+RESPUESTA4:Asegurar que la información enviada coincide con la recibida.
+VALIDA:3
+
+PREGUNTA:Al manejar formularios en PHP, ¿qué variable superglobal se recomienda para obtener información del servidor, como la IP del cliente o el método de petición?
+RESPUESTA1:$_POST
+RESPUESTA2:$_GET
+RESPUESTA3:$_SERVER
+RESPUESTA4:$_REQUEST
+VALIDA:3
+
+PREGUNTA:¿Qué lenguaje se utiliza para realizar consultas a Wikidata orientado a grafos de conocimiento, permitiendo filtrar por entidades y propiedades?
+RESPUESTA1:SQL
+RESPUESTA2:JSON
+RESPUESTA3:SPARQL
+RESPUESTA4:XML
+VALIDA:3
+
+PREGUNTA:¿Cuál es la finalidad principal del patrón de diseño Singleton?
+RESPUESTA1:Transformar una interfaz en otra para que una clase pueda usarla.
+RESPUESTA2:Asegurar que solo exista una única instancia de una clase accesible globalmente.
+RESPUESTA3:Alertar a otros objetos de cambios de estado sin introducir dependencias.
+RESPUESTA4:Separar la lógica de negocio de la interfaz de usuario.
+VALIDA:2
+
+PREGUNTA:En el desarrollo con Laravel, ¿cuál es la función de las "Factories"?
+RESPUESTA1:Definir las rutas de acceso a la aplicación.
+RESPUESTA2:Establecer la estructura de las tablas de la base de datos.
+RESPUESTA3:Generar datos ficticios o simulados para poblar las tablas durante las pruebas.
+RESPUESTA4:Gestionar la autenticación de los usuarios.
+VALIDA:3
+
+PREGUNTA:Dentro de los modelos de servicio cloud, ¿cuál ofrece al usuario control sobre los sistemas operativos y las aplicaciones, pero no sobre la infraestructura física de red o servidores?
+RESPUESTA1:Software como servicio (SaaS).
+RESPUESTA2:Plataforma como servicio (PaaS).
+RESPUESTA3:Infraestructura como servicio (IaaS).
+RESPUESTA4:Datos como servicio (DaaS).
+VALIDA:3
+
+PREGUNTA:Respecto a los servidores web, ¿cuál de los siguientes se define como un servidor de alto rendimiento que utiliza un proxy inverso pero no integra PHP de forma nativa?
+RESPUESTA1:Apache
+RESPUESTA2:IIS
+RESPUESTA3:Nginx
+RESPUESTA4:Sail
+VALIDA:3
+
+PREGUNTA:En PHP, ¿qué modo de apertura en la función fopen() permite abrir un fichero solo para escritura, colocando el puntero al final y creándolo si no existe?
+RESPUESTA1:"r"
+RESPUESTA2:"w"
+RESPUESTA3:"a"
+RESPUESTA4:"x"
+VALIDA:3
+
+PREGUNTA:¿Qué función de PHP permite regenerar el identificador de sesión después de que un usuario inicie sesión para evitar el secuestro de la misma?
+RESPUESTA1:session_start()
+RESPUESTA2:session_destroy()
+RESPUESTA3:session_regenerate_id(true)
+RESPUESTA4:session_unset()
+VALIDA:3
+
+PREGUNTA:¿Cómo se denomina al enfoque MVC donde el modelo debe notificar directamente a la vista cuando cambia su estado sin pasar por el controlador?
+RESPUESTA1:Comportamiento pasivo.
+RESPUESTA2:Comportamiento activo.
+RESPUESTA3:Comportamiento reactivo.
+RESPUESTA4:Comportamiento modular.
+VALIDA:2
+
+PREGUNTA:En Laravel, ¿en qué archivo se deben configurar los datos de acceso (usuario, contraseña, base de datos) para la conexión con MySQL?
+RESPUESTA1:config/database.php
+RESPUESTA2:.env
+RESPUESTA3:routes/web.php
+RESPUESTA4:app/Providers/AppServiceProvider.php
+VALIDA:2
+
+PREGUNTA:¿Cuál es una ventaja principal de las arquitecturas multinivel (N-Tier) frente a las de dos niveles?
+RESPUESTA1:Elimina la necesidad de usar bases de datos relacionales.
+RESPUESTA2:Permite actualizar cada nivel más fácilmente al estar desacoplados.
+RESPUESTA3:Reduce el tiempo de respuesta al no requerir el protocolo HTTP.
+RESPUESTA4:Garantiza que la aplicación funcione sin conexión a internet.
+VALIDA:2
+
+PREGUNTA:¿Qué versión de la web se caracteriza por el uso de Deep Learning y Machine Learning para ofrecer una experiencia predictiva y el uso de bots conversacionales?
+RESPUESTA1:Web 2.0
+RESPUESTA2:Web 3.0
+RESPUESTA3:Web 4.0
+RESPUESTA4:Web Semántica
+VALIDA:3
+
+PREGUNTA:¿Cuál es la diferencia principal entre las funciones json_encode() y json_decode() en PHP?
+RESPUESTA1:encode convierte JSON a array; decode convierte array a JSON.
+RESPUESTA2:encode convierte una matriz asociativa a objeto JSON; decode convierte JSON a objeto o array PHP.
+RESPUESTA3:encode cifra los datos; decode los descifra para mostrarlos.
+RESPUESTA4:encode es para el lado del servidor; decode es para el lado del cliente.
+VALIDA:2
+
+PREGUNTA:¿Qué método del objeto mysqli se utiliza para vincular de forma segura variables a una consulta preparada con marcadores de posición "?"?
+RESPUESTA1:prepare()
+RESPUESTA2:execute()
+RESPUESTA3:bind_param()
+RESPUESTA4:get_result()
+VALIDA:3
+
+PREGUNTA:¿A qué categoría de patrones de diseño pertenece el Modelo-Vista-Controlador (MVC) según las fuentes?
+RESPUESTA1:Patrones de creación.
+RESPUESTA2:Patrones estructurales.
+RESPUESTA3:Patrones de comportamiento.
+RESPUESTA4:Patrones arquitectónicos.
+VALIDA:4
+
+PREGUNTA:En Eloquent ORM, ¿qué método se utiliza para definir que un modelo "pertenece a" otro en una relación 1 a N (por ejemplo, Película pertenece a País)?
+RESPUESTA1:hasMany
+RESPUESTA2:belongsTo
+RESPUESTA3:with
+RESPUESTA4:join
+VALIDA:2
+
+PREGUNTA:¿Qué concepto describe a las aplicaciones web que combinan ventajas de las de escritorio, permitiendo funcionamiento offline e instalación local?
+RESPUESTA1:SaaS
+RESPUESTA2:PWA (Progressive Web Apps)
+RESPUESTA3:SOA
+RESPUESTA4:Middleware
+VALIDA:2

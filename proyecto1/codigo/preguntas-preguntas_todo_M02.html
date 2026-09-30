@@ -1,0 +1,369 @@
+<DOCTYPE html>  
+<html lang="es"> 
+<head> 
+<meta charset="utf-8">   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Formulario de Preguntas</title>  
+ <style>     
+           h1 {      
+               color: white;      
+               background-color: lightgreen;      
+               padding: 5px;     
+               border: 1px solid black;      
+           }      
+           h2 {      
+               color: black;      
+               padding: 5px;      
+               border: 1px solid black;      
+           }      
+           ol {      
+               color: black;       
+               background-color: white;      
+           }   
+           .correcto {        
+               background-color: green;        
+           }     
+           .incorrecto {        
+               background-color: red;        
+           }     
+           .box {  
+                 box-shadow: 0 3px 3px rgba(0,0,0,0.2);  
+           }   
+           .shadow-5 {  
+                 box-shadow: 0 1px 1px rgba(0,0,0,0.12),   
+                 0 2px 2px rgba(0,0,0,0.12),   
+                 0 4px 4px rgba(0,0,0,0.12),   
+                 0 8px 8px rgba(0,0,0,0.12),  
+                 0 16px 16px rgba(0,0,0,0.12);  
+           }  
+           .indice1 {  
+           }  
+           .indice2 {  
+           }	  
+</style>  
+<body> 
+    <h1 class="shadow-5">Formulario de Preguntas</h1> 
+    <form id="quizForm"> 
+    <h2 class="box">Al manejar formularios en PHP, &iquest;qu&eacute; variable superglobal se recomienda para obtener informaci&oacute;n del servidor, como la IP del cliente o el m&eacute;todo de petici&oacute;n?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q1" value="1"> $_SERVER   </li> 
+        <li class="indice1"><input type="radio" name="q1" value="2"> $_POST   </li> 
+        <li class="indice2"><input type="radio" name="q1" value="3"> $_REQUEST   </li> 
+        <li class="indice1"><input type="radio" name="q1" value="4"> $_GET   </li> 
+     </ol> 
+    <input type="hidden" name="valida1" value="1"> 
+    <input type="hidden" name="totalq1" value="5"> 
+    <h2 class="box">&iquest;Qu&eacute; m&eacute;todo del objeto mysqli se utiliza para vincular de forma segura variables a una consulta preparada con marcadores de posici&oacute;n "?"?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q2" value="1"> get_result()   </li> 
+        <li class="indice1"><input type="radio" name="q2" value="2"> execute()   </li> 
+        <li class="indice2"><input type="radio" name="q2" value="3"> bind_param()   </li> 
+        <li class="indice1"><input type="radio" name="q2" value="4"> prepare()   </li> 
+     </ol> 
+    <input type="hidden" name="valida2" value="3"> 
+    <input type="hidden" name="totalq2" value="5"> 
+    <h2 class="box">&iquest;Cu&aacute;l es la diferencia principal entre las funciones json_encode() y json_decode() en PHP?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q3" value="1"> encode convierte JSON a array; decode convierte array a JSON.   </li> 
+        <li class="indice1"><input type="radio" name="q3" value="2"> encode cifra los datos; decode los descifra para mostrarlos.   </li> 
+        <li class="indice2"><input type="radio" name="q3" value="3"> encode convierte una matriz asociativa a objeto JSON; decode convierte JSON a objeto o array PHP.   </li> 
+        <li class="indice1"><input type="radio" name="q3" value="4"> encode es para el lado del servidor; decode es para el lado del cliente.   </li> 
+     </ol> 
+    <input type="hidden" name="valida3" value="3"> 
+    <input type="hidden" name="totalq3" value="5"> 
+    <h2 class="box">&iquest;Qu&eacute; comando de Artisan permite crear simult&aacute;neamente un modelo y su correspondiente archivo de migraci&oacute;n en Laravel?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q4" value="1"> php artisan make:migration --model   </li> 
+        <li class="indice1"><input type="radio" name="q4" value="2"> php artisan make:schema Pelicula -m   </li> 
+        <li class="indice2"><input type="radio" name="q4" value="3"> php artisan create:model Pelicula --db   </li> 
+        <li class="indice1"><input type="radio" name="q4" value="4"> php artisan make:model Nombre --migration   </li> 
+     </ol> 
+    <input type="hidden" name="valida4" value="4"> 
+    <input type="hidden" name="totalq4" value="5"> 
+    <h2 class="box">En la manipulaci&oacute;n de arrays en PHP, &iquest;qu&eacute; funci&oacute;n se utiliza para contar todos los valores de un array dado, devolviendo un array asociativo con las frecuencias?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q5" value="1"> array_keys()   </li> 
+        <li class="indice1"><input type="radio" name="q5" value="2"> array_sum()   </li> 
+        <li class="indice2"><input type="radio" name="q5" value="3"> count()   </li> 
+        <li class="indice1"><input type="radio" name="q5" value="4"> array_count_values()   </li> 
+     </ol> 
+    <input type="hidden" name="valida5" value="4"> 
+    <input type="hidden" name="totalq5" value="5"> 
+    <h2 class="box">Al configurar una base de datos MySQL para Laravel, &iquest;por qu&eacute; se recomienda utilizar el motor de almacenamiento InnoDB en lugar de MyISAM?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q6" value="1"> Porque InnoDB es m&aacute;s r&aacute;pido en consultas de solo lectura.   </li> 
+        <li class="indice1"><input type="radio" name="q6" value="2"> Porque InnoDB permite trabajar con integridad referencial y relaciones entre tablas.   </li> 
+        <li class="indice2"><input type="radio" name="q6" value="3"> Porque MyISAM no permite la creaci&oacute;n de &iacute;ndices.   </li> 
+        <li class="indice1"><input type="radio" name="q6" value="4"> Porque MyISAM est&aacute; obsoleto y no es compatible con PHP 8.   </li> 
+     </ol> 
+    <input type="hidden" name="valida6" value="2"> 
+    <input type="hidden" name="totalq6" value="5"> 
+    <h2 class="box">Dentro de los modelos de servicio cloud, &iquest;cu&aacute;l ofrece al usuario control sobre los sistemas operativos y las aplicaciones, pero no sobre la infraestructura f&iacute;sica de red o servidores?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q7" value="1"> Software como servicio (SaaS).   </li> 
+        <li class="indice1"><input type="radio" name="q7" value="2"> Infraestructura como servicio (IaaS).   </li> 
+        <li class="indice2"><input type="radio" name="q7" value="3"> Datos como servicio (DaaS).   </li> 
+        <li class="indice1"><input type="radio" name="q7" value="4"> Plataforma como servicio (PaaS).   </li> 
+     </ol> 
+    <input type="hidden" name="valida7" value="2"> 
+    <input type="hidden" name="totalq7" value="5"> 
+    <h2 class="box">&iquest;Cu&aacute;l de los siguientes principios de la computaci&oacute;n en la nube permite a los proveedores asignar recursos f&iacute;sicos y virtuales din&aacute;micamente seg&uacute;n la demanda de m&uacute;ltiples consumidores?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q8" value="1"> Elasticidad r&aacute;pida.   </li> 
+        <li class="indice1"><input type="radio" name="q8" value="2"> Autoservicio bajo demanda.   </li> 
+        <li class="indice2"><input type="radio" name="q8" value="3"> Control del servicio.   </li> 
+        <li class="indice1"><input type="radio" name="q8" value="4"> Agrupaci&oacute;n de recursos (Resource pooling).   </li> 
+     </ol> 
+    <input type="hidden" name="valida8" value="4"> 
+    <input type="hidden" name="totalq8" value="5"> 
+    <h2 class="box">&iquest;Cu&aacute;l es la finalidad principal del patr&oacute;n de dise&ntilde;o Singleton?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q9" value="1"> Transformar una interfaz en otra para que una clase pueda usarla.   </li> 
+        <li class="indice1"><input type="radio" name="q9" value="2"> Separar la l&oacute;gica de negocio de la interfaz de usuario.   </li> 
+        <li class="indice2"><input type="radio" name="q9" value="3"> Asegurar que solo exista una &uacute;nica instancia de una clase accesible globalmente.   </li> 
+        <li class="indice1"><input type="radio" name="q9" value="4"> Alertar a otros objetos de cambios de estado sin introducir dependencias.   </li> 
+     </ol> 
+    <input type="hidden" name="valida9" value="3"> 
+    <input type="hidden" name="totalq9" value="5"> 
+    <h2 class="box">&iquest;Qu&eacute; concepto describe a las aplicaciones web que combinan ventajas de las de escritorio, permitiendo funcionamiento offline e instalaci&oacute;n local?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q10" value="1"> SOA   </li> 
+        <li class="indice1"><input type="radio" name="q10" value="2"> PWA (Progressive Web Apps)   </li> 
+        <li class="indice2"><input type="radio" name="q10" value="3"> SaaS   </li> 
+        <li class="indice1"><input type="radio" name="q10" value="4"> Middleware   </li> 
+     </ol> 
+    <input type="hidden" name="valida10" value="2"> 
+    <input type="hidden" name="totalq10" value="5"> 
+    <h2 class="box">&iquest;A qu&eacute; categor&iacute;a de patrones de dise&ntilde;o pertenece el Modelo-Vista-Controlador (MVC) seg&uacute;n las fuentes?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q11" value="1"> Patrones de creaci&oacute;n.   </li> 
+        <li class="indice1"><input type="radio" name="q11" value="2"> Patrones estructurales.   </li> 
+        <li class="indice2"><input type="radio" name="q11" value="3"> Patrones de comportamiento.   </li> 
+        <li class="indice1"><input type="radio" name="q11" value="4"> Patrones arquitect&oacute;nicos.   </li> 
+     </ol> 
+    <input type="hidden" name="valida11" value="4"> 
+    <input type="hidden" name="totalq11" value="5"> 
+    <h2 class="box">Respecto a los servidores web, &iquest;cu&aacute;l de los siguientes se define como un servidor de alto rendimiento que utiliza un proxy inverso pero no integra PHP de forma nativa?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q12" value="1"> Apache   </li> 
+        <li class="indice1"><input type="radio" name="q12" value="2"> Nginx   </li> 
+        <li class="indice2"><input type="radio" name="q12" value="3"> Sail   </li> 
+        <li class="indice1"><input type="radio" name="q12" value="4"> IIS   </li> 
+     </ol> 
+    <input type="hidden" name="valida12" value="2"> 
+    <input type="hidden" name="totalq12" value="5"> 
+    <h2 class="box">En Eloquent ORM, &iquest;qu&eacute; m&eacute;todo se utiliza para definir que un modelo "pertenece a" otro en una relaci&oacute;n 1 a N (por ejemplo, Pel&iacute;cula pertenece a Pa&iacute;s)?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q13" value="1"> join   </li> 
+        <li class="indice1"><input type="radio" name="q13" value="2"> hasMany   </li> 
+        <li class="indice2"><input type="radio" name="q13" value="3"> belongsTo   </li> 
+        <li class="indice1"><input type="radio" name="q13" value="4"> with   </li> 
+     </ol> 
+    <input type="hidden" name="valida13" value="3"> 
+    <input type="hidden" name="totalq13" value="5"> 
+    <h2 class="box">En el desarrollo con Laravel, &iquest;cu&aacute;l es la funci&oacute;n de las "Factories"?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q14" value="1"> Definir las rutas de acceso a la aplicaci&oacute;n.   </li> 
+        <li class="indice1"><input type="radio" name="q14" value="2"> Generar datos ficticios o simulados para poblar las tablas durante las pruebas.   </li> 
+        <li class="indice2"><input type="radio" name="q14" value="3"> Establecer la estructura de las tablas de la base de datos.   </li> 
+        <li class="indice1"><input type="radio" name="q14" value="4"> Gestionar la autenticaci&oacute;n de los usuarios.   </li> 
+     </ol> 
+    <input type="hidden" name="valida14" value="2"> 
+    <input type="hidden" name="totalq14" value="5"> 
+    <h2 class="box">Seg&uacute;n la evoluci&oacute;n de la web, &iquest;en qu&eacute; a&ntilde;o se fund&oacute; Google y qu&eacute; tecnolog&iacute;a introdujo el mismo a&ntilde;o el mercado canadiense?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q15" value="1"> 1998; introdujo la banda ancha.   </li> 
+        <li class="indice1"><input type="radio" name="q15" value="2"> 1990; introdujo el primer servidor web.   </li> 
+        <li class="indice2"><input type="radio" name="q15" value="3"> 1995; introdujo JavaScript.   </li> 
+        <li class="indice1"><input type="radio" name="q15" value="4"> 1998; Canad&aacute; introdujo la banda ancha en 1996.   </li> 
+     </ol> 
+    <input type="hidden" name="valida15" value="4"> 
+    <input type="hidden" name="totalq15" value="5"> 
+    <h2 class="box">En las plantillas Blade de Laravel, &iquest;qu&eacute; directiva se utiliza para definir el lugar exacto donde se inyectar&aacute; el contenido de una secci&oacute;n en un layout maestro?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q16" value="1"> @extends   </li> 
+        <li class="indice1"><input type="radio" name="q16" value="2"> @yield   </li> 
+        <li class="indice2"><input type="radio" name="q16" value="3"> @include   </li> 
+        <li class="indice1"><input type="radio" name="q16" value="4"> @section   </li> 
+     </ol> 
+    <input type="hidden" name="valida16" value="2"> 
+    <input type="hidden" name="totalq16" value="5"> 
+    <h2 class="box">En PHP 8, &iquest;cu&aacute;l es el comportamiento espec&iacute;fico de la funci&oacute;n fdiv() cuando ocurre una divisi&oacute;n por cero?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q17" value="1"> Retorna INF, -INF o NAN en lugar de lanzar un error.   </li> 
+        <li class="indice1"><input type="radio" name="q17" value="2"> Devuelve null y genera un mensaje de advertencia (Warning).   </li> 
+        <li class="indice2"><input type="radio" name="q17" value="3"> Devuelve un error de nivel fatal que detiene la ejecuci&oacute;n.   </li> 
+        <li class="indice1"><input type="radio" name="q17" value="4"> Lanza una excepci&oacute;n de tipo DivisionByZeroError.   </li> 
+     </ol> 
+    <input type="hidden" name="valida17" value="1"> 
+    <input type="hidden" name="totalq17" value="5"> 
+    <h2 class="box">&iquest;Qui&eacute;n formul&oacute; el patr&oacute;n MVC originalmente en la d&eacute;cada de 1970 dentro del sistema de programaci&oacute;n Smalltalk-76?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q18" value="1"> Trygve Reenskaug.   </li> 
+        <li class="indice1"><input type="radio" name="q18" value="2"> Dale Dougherty.   </li> 
+        <li class="indice2"><input type="radio" name="q18" value="3"> Tim Berners-Lee.   </li> 
+        <li class="indice1"><input type="radio" name="q18" value="4"> Rasmus Lerdorf.   </li> 
+     </ol> 
+    <input type="hidden" name="valida18" value="1"> 
+    <input type="hidden" name="totalq18" value="5"> 
+    <h2 class="box">En PHP, &iquest;qu&eacute; modo de apertura en la funci&oacute;n fopen() permite abrir un fichero solo para escritura, colocando el puntero al final y cre&aacute;ndolo si no existe?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q19" value="1"> "x"   </li> 
+        <li class="indice1"><input type="radio" name="q19" value="2"> "a"   </li> 
+        <li class="indice2"><input type="radio" name="q19" value="3"> "w"   </li> 
+        <li class="indice1"><input type="radio" name="q19" value="4"> "r"   </li> 
+     </ol> 
+    <input type="hidden" name="valida19" value="2"> 
+    <input type="hidden" name="totalq19" value="5"> 
+    <h2 class="box">&iquest;Qu&eacute; funci&oacute;n de PHP permite regenerar el identificador de sesi&oacute;n despu&eacute;s de que un usuario inicie sesi&oacute;n para evitar el secuestro de la misma?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q20" value="1"> session_unset()   </li> 
+        <li class="indice1"><input type="radio" name="q20" value="2"> session_regenerate_id(true)   </li> 
+        <li class="indice2"><input type="radio" name="q20" value="3"> session_destroy()   </li> 
+        <li class="indice1"><input type="radio" name="q20" value="4"> session_start()   </li> 
+     </ol> 
+    <input type="hidden" name="valida20" value="2"> 
+    <input type="hidden" name="totalq20" value="5"> 
+    <h2 class="box">&iquest;Qu&eacute; versi&oacute;n de la web se caracteriza por el uso de Deep Learning y Machine Learning para ofrecer una experiencia predictiva y el uso de bots conversacionales?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q21" value="1"> Web Sem&aacute;ntica   </li> 
+        <li class="indice1"><input type="radio" name="q21" value="2"> Web 4.0   </li> 
+        <li class="indice2"><input type="radio" name="q21" value="3"> Web 3.0   </li> 
+        <li class="indice1"><input type="radio" name="q21" value="4"> Web 2.0   </li> 
+     </ol> 
+    <input type="hidden" name="valida21" value="2"> 
+    <input type="hidden" name="totalq21" value="5"> 
+    <h2 class="box">Dentro del patr&oacute;n arquitect&oacute;nico MVC, &iquest;qu&eacute; mecanismo se utiliza frecuentemente para alertar a la vista sobre cambios en el modelo sin introducir dependencias directas?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q22" value="1"> El patr&oacute;n Singleton.   </li> 
+        <li class="indice1"><input type="radio" name="q22" value="2"> El patr&oacute;n Bridge.   </li> 
+        <li class="indice2"><input type="radio" name="q22" value="3"> El patr&oacute;n Observer.   </li> 
+        <li class="indice1"><input type="radio" name="q22" value="4"> El patr&oacute;n Factory Method.   </li> 
+     </ol> 
+    <input type="hidden" name="valida22" value="3"> 
+    <input type="hidden" name="totalq22" value="5"> 
+    <h2 class="box">Al trabajar con herencia en PHP, &iquest;cu&aacute;l es el modificador de visibilidad que permite que una propiedad sea accesible para la clase madre y sus hijas, pero no desde el exterior?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q23" value="1"> static   </li> 
+        <li class="indice1"><input type="radio" name="q23" value="2"> protected   </li> 
+        <li class="indice2"><input type="radio" name="q23" value="3"> public   </li> 
+        <li class="indice1"><input type="radio" name="q23" value="4"> private   </li> 
+     </ol> 
+    <input type="hidden" name="valida23" value="2"> 
+    <input type="hidden" name="totalq23" value="5"> 
+    <h2 class="box">&iquest;Qu&eacute; lenguaje se utiliza para realizar consultas a Wikidata orientado a grafos de conocimiento, permitiendo filtrar por entidades y propiedades?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q24" value="1"> SQL   </li> 
+        <li class="indice1"><input type="radio" name="q24" value="2"> SPARQL   </li> 
+        <li class="indice2"><input type="radio" name="q24" value="3"> XML   </li> 
+        <li class="indice1"><input type="radio" name="q24" value="4"> JSON   </li> 
+     </ol> 
+    <input type="hidden" name="valida24" value="2"> 
+    <input type="hidden" name="totalq24" value="5"> 
+    <h2 class="box">&iquest;C&oacute;mo se denomina al enfoque MVC donde el modelo debe notificar directamente a la vista cuando cambia su estado sin pasar por el controlador?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q25" value="1"> Comportamiento activo.   </li> 
+        <li class="indice1"><input type="radio" name="q25" value="2"> Comportamiento reactivo.   </li> 
+        <li class="indice2"><input type="radio" name="q25" value="3"> Comportamiento modular.   </li> 
+        <li class="indice1"><input type="radio" name="q25" value="4"> Comportamiento pasivo.   </li> 
+     </ol> 
+    <input type="hidden" name="valida25" value="1"> 
+    <input type="hidden" name="totalq25" value="5"> 
+    <h2 class="box">&iquest;Qu&eacute; caracter&iacute;stica de una arquitectura SOA implica que la implementaci&oacute;n del servicio debe estar oculta para el consumidor del mismo?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q26" value="1"> Descubrimiento.   </li> 
+        <li class="indice1"><input type="radio" name="q26" value="2"> Autonom&iacute;a.   </li> 
+        <li class="indice2"><input type="radio" name="q26" value="3"> Interoperabilidad.   </li> 
+        <li class="indice1"><input type="radio" name="q26" value="4"> Abstracci&oacute;n.   </li> 
+     </ol> 
+    <input type="hidden" name="valida26" value="4"> 
+    <input type="hidden" name="totalq26" value="5"> 
+    <h2 class="box">&iquest;Cu&aacute;l es una ventaja principal de las arquitecturas multinivel (N-Tier) frente a las de dos niveles?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q27" value="1"> Permite actualizar cada nivel m&aacute;s f&aacute;cilmente al estar desacoplados.   </li> 
+        <li class="indice1"><input type="radio" name="q27" value="2"> Reduce el tiempo de respuesta al no requerir el protocolo HTTP.   </li> 
+        <li class="indice2"><input type="radio" name="q27" value="3"> Elimina la necesidad de usar bases de datos relacionales.   </li> 
+        <li class="indice1"><input type="radio" name="q27" value="4"> Garantiza que la aplicaci&oacute;n funcione sin conexi&oacute;n a internet.   </li> 
+     </ol> 
+    <input type="hidden" name="valida27" value="1"> 
+    <input type="hidden" name="totalq27" value="5"> 
+    <h2 class="box">&iquest;Qu&eacute; protocolo sustituy&oacute; al NCP en 1981, permitiendo que cualquier ordenador compatible pudiera formar parte de Internet?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q28" value="1"> WWW   </li> 
+        <li class="indice1"><input type="radio" name="q28" value="2"> TCP/IP   </li> 
+        <li class="indice2"><input type="radio" name="q28" value="3"> PPP   </li> 
+        <li class="indice1"><input type="radio" name="q28" value="4"> HTTP   </li> 
+     </ol> 
+    <input type="hidden" name="valida28" value="2"> 
+    <input type="hidden" name="totalq28" value="5"> 
+    <h2 class="box">&iquest;Cu&aacute;l es la funci&oacute;n de la capa de "Ontolog&iacute;a" dentro de la arquitectura de la Web Sem&aacute;ntica propuesta por Tim Berners-Lee?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q29" value="1"> Asegurar que la informaci&oacute;n enviada coincide con la recibida.   </li> 
+        <li class="indice1"><input type="radio" name="q29" value="2"> Proporcionar una garant&iacute;a de calidad y confianza en la informaci&oacute;n.   </li> 
+        <li class="indice2"><input type="radio" name="q29" value="3"> Representar caracteres de manera &uacute;nica.   </li> 
+        <li class="indice1"><input type="radio" name="q29" value="4"> Describir colecciones de t&eacute;rminos y sus relaciones con capacidad de inferencia.   </li> 
+     </ol> 
+    <input type="hidden" name="valida29" value="4"> 
+    <input type="hidden" name="totalq29" value="5"> 
+    <h2 class="box">En Laravel, &iquest;en qu&eacute; archivo se deben configurar los datos de acceso (usuario, contrase&ntilde;a, base de datos) para la conexi&oacute;n con MySQL?  </h2> 
+     <ol type="a"> 
+        <li class="indice2"><input type="radio" name="q30" value="1"> routes/web.php   </li> 
+        <li class="indice1"><input type="radio" name="q30" value="2"> app/Providers/AppServiceProvider.php   </li> 
+        <li class="indice2"><input type="radio" name="q30" value="3"> config/database.php   </li> 
+        <li class="indice1"><input type="radio" name="q30" value="4"> .env   </li> 
+     </ol> 
+    <input type="hidden" name="valida30" value="4"> 
+    <input type="hidden" name="totalq30" value="5"> 
+  <hr>   
+  <input type="hidden" name="totalPreguntas" value="31">  
+  <button type="button" onclick="verificarRespuestas()">Enviar</button>  
+  <input type="reset" onclick="window.location.reload();">  
+  </form>  
+<script>     
+function verificarRespuestas() { 
+  const Meta_Preguntas = document.getElementsByName("totalPreguntas"); 
+  let num_total_preguntas = Meta_Preguntas[0].value; 
+  const valida = "valida"; 
+  const pregunta = "q"; 
+  let Preguntas_Constestadas = Verifica_Preguntas(num_total_preguntas); 
+  let respuestas_formulario = 0; 
+  for (let ind=1; ind <= num_total_preguntas-1; ind++) { 
+    let pregunta_tmp = document.getElementsByName(pregunta + ind); 
+    let respuesta_tmp = document.getElementsByName(valida + ind); 
+    respuestas_formulario += verificarRespuesta(pregunta_tmp, respuesta_tmp[0].value); 
+  } 
+  alert('Numero de preguntas : ' + (num_total_preguntas - 1) + '\n' + 'Preguntas contestadas : ' + Preguntas_Constestadas + '\n' + 'Preguntas no contestadas : ' + (num_total_preguntas - Preguntas_Constestadas -1 )  + '\n' + 'Preguntas acertadas : ' + respuestas_formulario + '\n' + 'Preguntas falladas : ' + (Preguntas_Constestadas - respuestas_formulario)); 
+} 
+function verificarRespuesta(respuestas, respuestaCorrecta) { 
+  let correctas = 0; 
+  for (let i=0;i<respuestas.length;i++) { 
+    if (respuestas[i].checked) { 
+      if (respuestas[i].value === respuestaCorrecta) { 
+        respuestas[i].insertAdjacentHTML("afterend","<span class='correcto'> BIEN </span>"); 
+        correctas++; 
+      } else { 
+        respuestas[i].insertAdjacentHTML("afterend","<span class='incorrecto'> MAL </span>"); 
+        for (let j=0;j<respuestas.length;j++) { 
+          if (respuestas[j].value === respuestaCorrecta) { 
+            respuestas[j].insertAdjacentHTML("afterend","<span class='correcto'> BIEN </span>"); 
+            break; 
+          } 
+        } 
+      } 
+    } 
+  } 
+  return correctas; 
+} 
+function Verifica_Preguntas(num_total_preguntas){ 
+  let total = 0; 
+  for (let ind=1; ind <= num_total_preguntas-1; ind++){ 
+    let opciones = document.getElementsByName("q"+ind); 
+    for (let i=0;i<opciones.length;i++){ 
+      if(opciones[i].checked){ total++; break; } 
+    } 
+  } 
+  return total; 
+} 
+</script> 
+</body> 
+</html> 
